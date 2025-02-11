@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^6.5.0",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^14.5.2",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^4.2.3"
+    "web-vitals": "^4.2.3",
+    "workbox-background-sync": "^7.3.0",
+    "ics": "^3.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +19,15 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "overrides": {
+    "nth-check": "2.1.1",
+    "postcss": "^8.4.47",
+    "svgo": "^3.0.2",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-class-properties": "^7.25.9",
+    "glob": "^10.3.10",
+    "rimraf": "^5.0.5"
   },
   "eslintConfig": {
     "extends": [
@@ -39,12 +48,22 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@babel/plugin-transform-class-properties": "^7.25.9",
+    "@babel/plugin-transform-private-property-in-object": "^7.25.9",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.26.6",
+    "@babel/plugin-transform-numeric-separator": "^7.25.9",
+    "@babel/plugin-transform-optional-chaining": "^7.25.9",
+    "@babel/plugin-transform-private-methods": "^7.25.9",
+    "@rollup/plugin-terser": "^0.4.4",
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.13",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@eslint/config-array": "^0.19.2",
+    "@eslint/object-schema": "^2.1.6"
   },
   "homepage": "https://SamBarbeau.github.io/"
 }
